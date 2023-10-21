@@ -10,6 +10,11 @@
 #include <mmsystem.h>
 #include <ws2ipdef.h>
 
+/* Just a random identifier that's not defined with my version of GCC. */
+#ifndef IP_TTL
+#define IP_TTL 7
+#endif
+
 static enet_uint32 timeBase = 0;
 
 int
